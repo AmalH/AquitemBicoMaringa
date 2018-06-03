@@ -16,22 +16,7 @@ aquitem_bico_contact:
     path:     /contato
     defaults: { _controller: MyAppAquitemBicoBundle:AquitemBico:contact }
 #-------------- Footer routes ----------------------------------------------------
-aquitem_bico_termsandconditions:
-    path:     /termosecondiçõe
-    defaults: { _controller: MyAppAquitemBicoBundle:AquitemBico:termsconditions}
-aquitem_bico_privacypolicy:
-    path:     /politicaprivacidade
-    defaults: { _controller: MyAppAquitemBicoBundle:AquitemBico:privacypolicy} 
-aquitem_bico_sitemap:
-    path:     /mapadosite
-    defaults: { _controller: MyAppAquitemBicoBundle:AquitemBico:sitemap} 
-aquitem_bico_faqs:
-    path:     /faqs
-    defaults: { _controller: MyAppAquitemBicoBundle:AquitemBico:faqs} 
-aquitem_bico_help:
-    path:     /ajuda
-    defaults: { _controller: MyAppAquitemBicoBundle:AquitemBico:help} 
-    
+
 #-------------- Registration ----------------------------------------------------------
 aquitem_bico_loginoucadastro:
     path:     /loginoucadastro

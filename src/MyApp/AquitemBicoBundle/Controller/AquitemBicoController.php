@@ -21,21 +21,5 @@ class AquitemBicoController extends Controller {
     public function contactAction() {
         return $this->render('MyAppAquitemBicoBundle:Home:contact.html.twig');
     }
-    
-    public function termsconditionsAction(){
-        return $this->render('MyAppAquitemBicoBundle:FooterRedirects:termsandconditions.html.twig');
-    }
-    public function privacypolicyAction(){
-        return $this->render('MyAppAquitemBicoBundle:FooterRedirects:privacypolicy.html.twig');
-    }
-    public function sitemapAction(){
-        return $this->render('MyAppAquitemBicoBundle:FooterRedirects:sitemap.html.twig');
-    }
-    public function faqsAction(){
-        return $this->render('MyAppAquitemBicoBundle:FooterRedirects:faqs.html.twig');
-    }
-    public function helpAction(){
-        return $this->render('MyAppAquitemBicoBundle:FooterRedirects:help.html.twig');
-    }
 
 }

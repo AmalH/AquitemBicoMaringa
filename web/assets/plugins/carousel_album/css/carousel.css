@@ -23,7 +23,6 @@
 .albumscontainer{
     height:45%;
     margin:2%;
-    background-color: lavender;
     overflow-x:scroll;
     white-space: nowrap;
     overflow-y: hidden;

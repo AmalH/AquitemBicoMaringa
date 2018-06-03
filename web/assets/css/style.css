@@ -361,7 +361,7 @@ margin-top: -2%;
 .featured{
     border-top: solid 1px #f2f2f2;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F8F8F8), color-stop(100, #FFFFFF));
-    padding: 80px 0px;
+    padding: 30px 0px;
 }
 .table-bg{
     background-color: #fff;
@@ -436,6 +436,7 @@ a.table-btn-default:hover, a.table-btn-default:focus{ background-color: #017583;
 }
 .twolastsections{
     margin-bottom: 5%;
+    margin-top: -5%;
 }
 
 /*********our_site*******/
@@ -658,12 +659,12 @@ hr {
     background-size: cover;
     position: relative;
     overflow: hidden;
-    float: left;
     width: 100%;height: 200px;
 }
 .footer-block{
     width:  17%;
     float: left;
+    padding-left: 60px;
 }
 .footer-block2{
     width:  32%;
@@ -672,7 +673,7 @@ hr {
     border: solid 1px #fff;
     margin-top: 25px;
     margin-bottom: 20px;
-    width: 35px;
+    width: 100px;
 }
 .footer-block h4{
     font-size: 16px;
@@ -934,7 +935,7 @@ ul.bottom_link li a {
 .gallery_banner{
    background: url(../images/listing-banner.jpg) no-repeat left top/cover; 
 }
-.about_us{ padding-bottom: 70px;}
+.about_us{ padding-bottom: 70px;padding-top: 20px;}
 .banner .banner-heading{
     background: url(../images/about/text-sep.png) center no-repeat;
     padding: 25px;
@@ -953,7 +954,7 @@ ul.bottom_link li a {
 .page-heading strong{
     font-size: 20px;
     color: #017583;
-    font-weight: 500;
+    font-weight: 400;
     font-family: 'Roboto Slab', serif;
     line-height: 30px;
 }
@@ -962,7 +963,7 @@ ul.bottom_link li a {
     margin-left: 2%;
     margin-bottom: 2%;
 }
-.about_right span{ font-weight: 500; font-size: 16px; color: #333333;}
+.about_right span{ font-weight: 400; font-size: 16px; color: #333333;}
 .text-success{ color: #017583;}
 .about_right p{
     color: #7d7d7d;
@@ -972,6 +973,7 @@ ul.bottom_link li a {
 }
 .about_right {
     padding-bottom: 20px;
+    text-align: justify;
 }
 .feature_block h2{
     font-size: 16px;
@@ -1332,8 +1334,6 @@ label span{ color: #7d7d7d; font-weight: 500;}
    margin-top: -5px; 
 }
 .events h2{
-
     color: #017583;
     font-weight: 400;
-    font-family: 'Roboto Slab', serif;
 }
