@@ -1,0 +1,11 @@
+MyApp\AquitemBicoBundle\Entity\Test:
+    type: entity
+    table: null
+    repositoryClass: MyApp\AquitemBicoBundle\Repository\TestRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    lifecycleCallbacks: {  }

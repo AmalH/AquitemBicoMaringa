@@ -1,0 +1,18 @@
+# Learn more about services, parameters and containers at
+# http://symfony.com/doc/current/book/service_container.html
+parameters:
+#    parameter_name: value
+
+services:
+    registerempresa.form.registration:
+                class: MyApp\UserBundle\Form\EmpresaRegistrationType
+                tags:
+                    - { name: form.type, alias: myapp_empresa_registration }
+    registercandidate.form.registration:
+                class: MyApp\UserBundle\Form\CandidateRegistrationType
+                tags:
+                    - { name: form.type, alias: myapp_candidate_registration }
+#    service_name:
+#        class: AppBundle\Directory\ClassName
+#        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+     

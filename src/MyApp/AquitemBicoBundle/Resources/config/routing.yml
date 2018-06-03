@@ -1,0 +1,111 @@
+my_app_aquitem_bico_vagas:
+    resource: "@MyAppAquitemBicoBundle/Resources/config/routing/vagas.yml"
+    prefix:   /vagas
+
+#-------------- Home Page routes ----------------------------------------------------
+aquitem_bico_homepage:
+    path:     /
+    defaults: { _controller: MyAppAquitemBicoBundle:AquitemBico:home }
+aquitem_bico_gallery:
+    path:     /galeria
+    defaults: { _controller: MyAppAquitemBicoBundle:AquitemBico:gallery }
+aquitem_bico_about:
+    path:     /sobrenos
+    defaults: { _controller: MyAppAquitemBicoBundle:AquitemBico:about }
+aquitem_bico_contact:
+    path:     /contato
+    defaults: { _controller: MyAppAquitemBicoBundle:AquitemBico:contact }
+#-------------- Footer routes ----------------------------------------------------
+aquitem_bico_termsandconditions:
+    path:     /termosecondiçõe
+    defaults: { _controller: MyAppAquitemBicoBundle:AquitemBico:termsconditions}
+aquitem_bico_privacypolicy:
+    path:     /politicaprivacidade
+    defaults: { _controller: MyAppAquitemBicoBundle:AquitemBico:privacypolicy} 
+aquitem_bico_sitemap:
+    path:     /mapadosite
+    defaults: { _controller: MyAppAquitemBicoBundle:AquitemBico:sitemap} 
+aquitem_bico_faqs:
+    path:     /faqs
+    defaults: { _controller: MyAppAquitemBicoBundle:AquitemBico:faqs} 
+aquitem_bico_help:
+    path:     /ajuda
+    defaults: { _controller: MyAppAquitemBicoBundle:AquitemBico:help} 
+    
+#-------------- Registration ----------------------------------------------------------
+aquitem_bico_loginoucadastro:
+    path:     /loginoucadastro
+    defaults: { _controller: UserBundle:Registration:loginoucadastro }
+aquitem_bico_registercompany:
+    path:     /cadastroempresa
+    defaults: { _controller: UserBundle:Registration:registercompany }
+aquitem_bico_registerperson:
+    path:     /cadastrocandidato 
+    #defaults: { _controller: FOSUserBundle:Registration:register }
+    defaults: { _controller: UserBundle:Registration:registerperson }
+    
+    
+#-------------- Candidate -----------------------------------------------------------
+aquitem_bico_candidateDashboard:
+    path:     /meupainelcd
+    defaults: { _controller: MyAppAquitemBicoBundle:CandidateDashboard:index }
+aquitem_bico_candidateProfil:
+    path:     /meupainelcdperfil
+    defaults: { _controller: MyAppAquitemBicoBundle:CandidateDashboard:profil }
+aquitem_bico_candidateEditProfil:
+    path:     /meupainelcdeditarperfil
+    defaults: { _controller: MyAppAquitemBicoBundle:CandidateDashboard:editprofil }
+aquitem_bico_candidateEvaluations:
+    path:     /meupainelcdavaliacoes
+    defaults: { _controller: MyAppAquitemBicoBundle:CandidateDashboard:evaluations }
+aquitem_bico_candidateVacancies:
+    path:     /meupainelcdvagas
+    defaults: { _controller: MyAppAquitemBicoBundle:CandidateDashboard:vacancies }
+aquitem_bico_candidateContracting:
+    path:     /meupainelcdhistocontrat
+    defaults: { _controller: MyAppAquitemBicoBundle:CandidateDashboard:contractingHistory }
+aquitem_bico_candidateAccountSettings:
+    path:     /meupainelcdconfigconta
+    defaults: { _controller: MyAppAquitemBicoBundle:CandidateDashboard:accountSettings }
+    
+#-------------- Company -----------------------------------------------------------
+aquitem_bico_employerDashboard:
+    path:     /meupainelem
+    defaults: { _controller: MyAppAquitemBicoBundle:EmployerDashboard:index }
+aquitem_bico_employerProfil:
+    path:     /meupainelemperfil
+    defaults: { _controller: MyAppAquitemBicoBundle:EmployerDashboard:profil }
+aquitem_bico_employerEditProfil:
+    path:     /meupainelemeditarperfil
+    defaults: { _controller: MyAppAquitemBicoBundle:EmployerDashboard:editprofil }
+aquitem_bico_employerAddVacancy:
+    path:     /meupainelemcrievaga
+    defaults: { _controller: MyAppAquitemBicoBundle:EmployerDashboard:createVacancy }
+aquitem_bico_employerFavourites:
+    path:     /meupainelemfavoritos
+    defaults: { _controller: MyAppAquitemBicoBundle:EmployerDashboard:favourites }
+aquitem_bico_employerVacancies:
+    path:     /meupainelemvagas
+    defaults: { _controller: MyAppAquitemBicoBundle:EmployerDashboard:vacancies }
+aquitem_bico_employerEvaluations:
+    path:     /meupainelemavaliarcds
+    defaults: { _controller: MyAppAquitemBicoBundle:EmployerDashboard:evaluateCandidate }
+aquitem_bico_employerAccountSettings:
+    path:     /meupainelemconfigconta
+    defaults: { _controller: MyAppAquitemBicoBundle:EmployerDashboard:accountSettings }
+aquitem_bico_employerEditVacancy:
+    path:     /meupainelemeditarvaga
+    defaults: { _controller: MyAppAquitemBicoBundle:EmployerDashboard:editvacancy }
+aquitem_bico_employerReceivedEvals:
+    path:     /meupainelemerecebavals
+    defaults: { _controller: MyAppAquitemBicoBundle:EmployerDashboard:receivedEvals }
+#-------------- Vacancies -----------------------------------------------------------
+aquitem_bico_avacancy:
+    path:     /{id}/vaga
+    defaults: { _controller: MyAppAquitemBicoBundle:Vacancies:index }
+aquitem_bico_applicationsforvacancy:
+    path:     /aplicacoes
+    defaults: { _controller: MyAppAquitemBicoBundle:Vacancies:applications }
+aquitem_bico_candidatesforvacancy:
+    path:     /candidatos
+    defaults: { _controller: MyAppAquitemBicoBundle:Vacancies:candidates }

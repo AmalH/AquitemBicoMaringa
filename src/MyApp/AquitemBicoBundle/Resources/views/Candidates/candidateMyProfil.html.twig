@@ -1,0 +1,130 @@
+{% extends 'MyAppAquitemBicoBundle::Candidates/candidateDashboard.html.twig' %}
+
+{% block head %}
+    {% block stylesheet %} 
+        {{parent() }}
+    {% endblock %}
+{% endblock %}
+{% block content %}
+    {% block banner %}
+        <div id="vagasbanner" class="page_banner banner listing-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="banner-heading">Seu currículo</div>    
+                    </div>  
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+
+    {%block maincontent %}
+        <main id="maincontent">
+            <div class="row"  style="padding: 0px;margin-top:-40px;">
+                {% block menu %} 
+                    {{parent() }}
+                {% endblock %}
+                {% block selectedcontent %}
+                    <div class="col-md-10" style="padding:0px;">
+                        <div class="row contenttop">
+                            <div class="col-md-12">
+                                <div class="page-heading">
+                                    <h2>Como as empresas vêem seu perfil<h2>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            <div class="row contentmain">
+
+                                                <div class="col-md-8">
+                                                    <div class="panel-body" style="width: 98%">
+                                                        <div><div class="panel-heading">Informação básica</div>
+                                                            <div class="contact_details col-md-6 p-l">
+                                                                <span><strong>Data de nascimento:</strong> 24/02/1993</span>
+                                                            </div>
+                                                            <div class="contact_details col-md-6 p-l">
+                                                                <span><strong>Disponivel para viagem :</strong> sim</span>
+                                                            </div>
+                                                            <div class="contact_details col-md-6 p-l">
+                                                                <span><strong>Endereço:</strong>Rua California,566</span>
+                                                            </div>
+                                                            <div class="contact_details col-md-6 p-l">
+                                                                <span><strong>Fumante:</strong> Sim</span>
+                                                            </div>
+                                                            <div class="contact_details col-md-6 p-l">
+                                                                <span><strong>Facebook:</strong> Amal Hichri</span>
+                                                            </div>
+                                                            <div class="contact_details col-md-6 p-l">
+                                                                <span><strong>Disponibilidade:</strong> (add a picker here)</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="job_title">Sobre mim </div>
+                                                        <div class="page-heading">
+                                                            <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. <b class="text-success">Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</b> Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero.</p>
+                                                            <div class="borderfull-width"></div>
+                                                        </div>  
+                                                        <div class="page-heading">
+                                                            <div class="panel-heading">Formação academica</div>
+                                                            <div class="contact_details col-md-6 p-l">
+                                                                <span><strong>Academia de Arte de New York</strong></span>
+                                                                <span>Escolaridade: aaasasas</span>
+                                                                <span>Nivel: asaassa</span>
+                                                                <span>Area professional: dallmm</span>
+                                                            </div>
+                                                            <div class="contact_details col-md-6 p-l">
+                                                                <span><strong>Instituto de Design Gráfico, Canadá</strong></span>
+                                                                <span>Escolaridade: aaasasas</span>
+                                                                <span>Nivel: asaassa</span>
+                                                                <span>Area professional: dallmm</span>
+                                                            </div>
+                                                            <div class="borderfull-width"></div>
+                                                        </div>
+                                                        <div class="page-heading">
+                                                            <div class="panel-heading">Qualificações</div>
+                                                            <div class="contact_details col-md-6 p-l">
+                                                                <span><strong>Maquinas e informatica</strong></span>
+                                                                <span>Maquinas que opera: aaasasas</span>
+                                                                <span>Programas e aplicativos: asaassa</span>
+                                                                <span>Cursos complementarios: dallmm</span>
+                                                            </div>
+                                                            <div class="contact_details col-md-6 p-l">
+                                                                <span><strong>Línguas</strong></span>
+                                                                <span>Nível em ingles: (add a picker here)</span>
+                                                                <span>Nível em espanhol: (add a picker here)</span>
+                                                                <span>Nível em informatica: (add a picker here)</span>
+                                                            </div>
+                                                            <div class="borderfull-width"></div>
+                                                        </div>
+                                                        <div class="page-heading">
+                                                            <div class="panel-heading">Designação</div>
+                                                            <div class="contact_details">
+                                                                <span><strong>Dados de habilitação:</strong>(add the choice pickers here)</span>
+                                                                <span><string>Áreas de interesse:</strong></span>
+                                                                <span>(add the lists here)</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 author" style="padding-left:60px;" >
+                                                    <div class="panel-body" style="width: 230px">
+                                                        <a href="#"><img src="{{ asset('assets/images/man1.png') }}" alt="" class="img-responsive" /></a>
+                                                        <div class="job_title">
+                                                            <p></p>
+                                                            Hi, John Anderson 
+                                                            <a href="#">UI / UX Graphic Designer</a>
+                                                        </div>
+                                                        <div class="contact_details">
+                                                            <span><i class="fa fa-envelope"></i><a href="#">john.anderson@example.com</a></span>
+                                                            <span><i class="fa fa-phone"></i> +1 800 234 5678</span>
+                                                            <span><i class="fa fa-map-marker"></i> Canada, USA</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            </div> 
+                                        {%endblock %}
+                                        </div>
+                                        </main>
+                                    {%endblock %}
+                                {% endblock %}

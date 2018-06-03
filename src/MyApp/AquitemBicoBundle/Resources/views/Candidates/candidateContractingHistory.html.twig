@@ -1,0 +1,102 @@
+{% extends 'MyAppAquitemBicoBundle::Candidates/candidateDashboard.html.twig' %}
+
+{% block head %}
+    {% block stylesheet %} 
+        {{parent() }}
+    {% endblock %}
+{% endblock %}
+{% block content %}
+    {% block banner %}
+        <div class="page_banner banner employer-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="banner-heading">Suas vagas cadastras</div>    
+                    </div>  
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+
+    {%block maincontent %}
+        <main id="maincontent">
+            <div class="row"  style="padding: 0px;margin-top:-40px;">
+                {% block menu %} 
+                    {{parent() }}
+                {% endblock %}
+                {% block selectedcontent %}        
+                    <div class="col-md-10" style="padding:0px;">
+                       
+                            <div class="row contenttop">
+                                <div class="col-md-6">
+                                    <div class="page-heading">
+                                        <h2>Pode avaliar ou excluir uma dessas vagas</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row contentmain">
+                                <div class="col-md-12">
+                                    <div class="panel-body" style="width: 98%">
+                                        <div class="job_title"></div>
+                                        <table class="table">
+                                            <thead class="">
+                                                <tr>
+                                                    <th>Titulo do trabalho</th>
+                                                    <th>Status</th>
+                                                    <th>Açao</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><h1>Team of PHP MySQL Developers <p>Agricultural Sceences</p></h1></td>
+                                                    <td class="work-time">Contratado</td>
+                                                    <td><span><i class="fa fa-star"></span><span><i></i><i class="fa fa-star-half-full"></span><span><i></i><i class="fa fa-trash"></i></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h1>Urgent Opening for PHP Developer <p>Agricultural Sceences</p></h1></td>
+                                                    <td class="work-time part">Seleção em curso</td>
+                                                    <td><span><i class="fa fa-star"></span><span><i></i><i class="fa fa-star-half-full"></span><span><i></i><i class="fa fa-trash"></i></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h1>Urgent Require- Web Developer <p>Agricultural Sceences</p></h1></td>
+                                                    <td class="work-time part">Seleção em curso</td>
+                                                    <td><span><i class="fa fa-star"></span><span><i></i><i class="fa fa-star-half-full"></span><span><i></i><i class="fa fa-trash"></i></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h1>Nodejs,Angularjs Developer <p>Agricultural Sceences</p></h1></td>
+                                                    <td class="work-time">Contratado</td>
+                                                    <td><span><i class="fa fa-star"></span><span><i></i><i class="fa fa-star-half-full"></span><span><i></i><i class="fa fa-trash"></i></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h1>Software Developer -IT Co <p>Agricultural Sceences</p></h1></td>
+                                                    <td class="work-time Free">Encerrada</td>
+                                                    <td><span><i class="fa fa-star"></span><span><i></i><i class="fa fa-star-half-full"></span><span><i></i><i class="fa fa-trash"></i></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h1>Website Developer and Head of Developers <p>Agricultural Sceences</p></h1></td>
+                                                    <td class="work-time">Contratado</td>
+                                                    <td><span><i class="fa fa-star"></span><span><i></i><i class="fa fa-star-half-full"></span><span><i></i><i class="fa fa-trash"></i></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h1>Software Developer-Winforms-wpf<p>Agricultural Sceences</p></h1></td>
+                                                    <td class="work-time part">Contratado</td>
+                                                    <td><span><i class="fa fa-star"></span><span><i></i><i class="fa fa-star-half-full"></span><span><i></i><i class="fa fa-trash"></i></span></td>
+                                                </tr>   
+                                                <tr class="border-none">
+                                                    <td><h1>Software Developer -Leading IT Company <p>Agricultural Sceences</p></h1></td>
+                                                    <td class="work-time">Contratado</td>
+                                                    <td><span><i class="fa fa-star"></span><span><i></i><i class="fa fa-star-half-full"></span><span><i></i><i class="fa fa-trash"></i></span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>           
+                     
+                    </div>
+                {%endblock %}
+            </div>
+        </main>
+    {%endblock %}
+
+{% endblock %}

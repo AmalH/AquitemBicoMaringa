@@ -1,0 +1,3 @@
+aquitem_bico_homepage:
+    path:     /
+    defaults: { _controller: MyAppAquitemBicoBundle:AquitemBico:home }

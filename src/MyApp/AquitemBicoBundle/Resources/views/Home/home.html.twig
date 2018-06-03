@@ -1,0 +1,237 @@
+{% extends 'MyAppAquitemBicoBundle::layout.html.twig' %}
+
+{% block head %}
+    <title> {% block title %} {{parent() }}{% endblock %} </title>
+    {% block stylesheet %} 
+        {{parent() }}
+        <link href="{{ asset('assets/css/carousel.css') }}" rel="stylesheet">{% endblock %}
+    {% endblock %}
+
+    {% block content %} 
+        <div class="site-banner twolastsections">
+            <div class="container">
+                <div class="row">
+                    <div class="banner-content"class="col-md-9">
+                        <div class="banner-content">
+                            <h1>Pesquisa entre 2480   <br />  vagas disponíveis.</h1>
+                            <p>As melhores Vagas, e os melhores <br />profissionais você só encontra aqui!</p>
+                        </div>
+                        <div class="job-search">
+                            <div class="form-group col-md-6 padding-left b-r radius">
+                                <input type="text" class="form-control" placeholder="Nome de vaga / palavra-chave" />
+                                <div class="search_icon"><span class="ti-briefcase"></span></div>
+                            </div>
+                            <div class="col-md-6 btn-search">
+                                <a href="#" class="btn btn-default">Buscar vaga</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- main content of the page -->
+        <main >
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="page-heading">
+                                <h2>Encontre o Bico que mais se enquadra ao seu perfil!</h2>
+                                <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu.</p>
+                            </div>  
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#All">Vagas Disponíveis</a></li>
+                                <li><a data-toggle="tab" href="#Location">Vagas por Localidade</a></li>
+                                <li class="pull-right"><a href="#" class="view">Ver todas as Vagas</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="All" class="tab-pane fade in active">
+                                    <div class="col-md-4 padding-left">
+                                        <ul class="unstyled">
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Professor de informática</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Pintor 4 meses</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Garçom Noturno</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Programador PHP</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Atendente</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Auxiliar de Cozinha</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Animador de Festa</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 padding-left">
+                                        <ul class="unstyled">
+                                             <li><a href="#"><i class="fa fa-angle-right"></i> Professor de informática</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Pintor 4 meses</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Garçom Noturno</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Programador PHP</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Atendente</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Auxiliar de Cozinha</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Animador de Festa</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 padding-left">
+                                        <ul class="unstyled">
+                                             <li><a href="#"><i class="fa fa-angle-right"></i> Professor de informática</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Pintor 4 meses</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Garçom Noturno</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Programador PHP</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Atendente</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Auxiliar de Cozinha</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Animador de Festa</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="Location" class="tab-pane fade">
+                                    <div class="col-md-4 padding-left">
+                                        <ul class="unstyled">
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Professor de informática</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Pintor 4 meses</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Garçom Noturno</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Programador PHP</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Atendente</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Auxiliar de Cozinha</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Animador de Festa</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 padding-left">
+                                        <ul class="unstyled">
+                                             <li><a href="#"><i class="fa fa-angle-right"></i> Professor de informática</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Pintor 4 meses</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Garçom Noturno</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Programador PHP</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Atendente</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Auxiliar de Cozinha</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Animador de Festa</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 padding-left">
+                                        <ul class="unstyled">
+                                             <li><a href="#"><i class="fa fa-angle-right"></i> Professor de informática</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Pintor 4 meses</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Garçom Noturno</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Programador PHP</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Atendente</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Auxiliar de Cozinha</a></li>
+                                            <li><a href="#"><i class="fa fa-angle-right"></i> Animador de Festa</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="Resume">
+                                <h1>Cadastre-se agora mesmo e encontre uma vaga!</h1>
+                                <a href="#" class="btn btn-cv btn-block">Cadastrar</a>
+                                <p> <strong>Já é cadastrado?</strong> <a href="#">Faça seu Login</a></p>
+                                <div class="bottom">
+                                    <h1>Newsletter</h1>
+                                    <p> Receba todas as nossa atualizações por Email.</p>  
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Digite seu-email..." />
+                                    </div>
+                                    <p class="text-right"><a href="#">Cadastrar</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+            <section class="success_story ">
+                <div class="container" >
+                    <div class="row" >
+                        <div class="col-md-4 text-right">
+                            <div class="page-heading2" >
+                                <h1>AquiTem<span>Bico</span></h1>
+                                <strong>Histórias de sucesso</strong>
+                            </div>
+                        </div>
+                        <div class="col-md-7" >
+                            <div class="testi-slider">  
+                                <ul class="slides list-inline">
+                                    <li>
+                                        <div class="testi-box clearfix text-center">
+                                            <img src="{{ asset('assets/images/home/t1.png') }}" alt="" class="img-responsive">
+                                            <div class="content">
+                                                <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+                                                <div class="content-hr"></div>
+                                                <h4>Luiza Mariano</h4>
+                                                <span>Atendente</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="testi-box clearfix text-center">
+                                            <img src="{{ asset('assets/images/home/t1.png') }}" alt="" class="img-responsive">
+                                            <div class="content">
+                                                <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+                                                <div class="content-hr"></div>
+                                                <h4>Rafaela antos</h4>
+                                                <span>Auxiliar Administrativo</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="testi-box clearfix text-center">
+                                            <img src="{{ asset('assets/images/home/t1.png') }}" alt="" class="img-responsive">
+                                            <div class="content">
+                                                <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
+                                                <div class="content-hr"></div>
+                                                <h4>Wabidullah Sharif</h4>
+                                                <span>Web Designer</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+  <section class="twolastsections" >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 text-center">
+                            <div class="page-heading">
+                                <h2>Empresas Parceiras</h2>
+                                <p>Acreditamos que nenhum suceso e alcançado sem grandes parcerias.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="client">
+                                <a href="#"><img src="{{ asset('assets/images/home/employe6.jpg') }}" alt="" class="img-responsive"  /></a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="client">
+                                <a href="#"><img src="{{ asset('assets/images/home/employe1.jpg') }}" alt="" class="img-responsive"  /></a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="client">
+                                <a href="#"><img src="{{ asset('assets/images/home/employe3.jpg') }}" alt="" class="img-responsive"  /></a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="client">
+                                <a href="#"><img src="{{ asset('assets/images/home/employe4.jpg') }}" alt="" class="img-responsive"  /></a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="client">
+                                <a href="#"><img src="{{ asset('assets/images/home/employe5.jpg') }}" alt="" class="img-responsive"  /></a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="client">
+                                <a href="#"><img src="{{ asset('assets/images/home/employe2.jpg') }}" alt="" class="img-responsive"  /></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+             </main>
+        {% endblock %}

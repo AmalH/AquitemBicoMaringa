@@ -1,0 +1,46 @@
+{% extends 'MyAppAquitemBicoBundle::Employers/employerDashboard.html.twig' %}
+
+{% block head %}
+    {% block stylesheet %} 
+        {{parent() }}
+    {% endblock %}
+{% endblock %}
+{% block content %}
+    {% block banner %}
+        <div id="mainbanner" class="page_banner banner post-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="banner-heading">Editar currículo</div>    
+                    </div>  
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+
+    {%block maincontent %}
+        <main id="maincontent">
+            <div class="row"  style="padding: 0px;margin-top:-40px">
+                {%block menu %}
+                    {{parent() }}
+                {%endblock %}
+                {%block selectedcontent %}
+                    <div class="col-md-10" style="padding:0px">
+                        <div class="row contenttop">
+                            <div class="col-md-12 page-heading">
+                                <h2> Como foi trabalhar com esses candidatos? </h2>
+                            </div>
+                        </div>
+                        <div class="row contentmain">
+                            <div class="col-md-12">
+                                <p> test Avaliações Recebidas </p>
+                            </div>
+                        </div>
+                    </div>
+                {% endblock %}
+            </div>
+        </main>
+    {%endblock %}
+
+
+{% endblock %}
