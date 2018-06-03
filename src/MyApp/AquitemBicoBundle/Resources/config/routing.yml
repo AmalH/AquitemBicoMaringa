@@ -17,6 +17,7 @@ aquitem_bico_contact:
     defaults: { _controller: MyAppAquitemBicoBundle:AquitemBico:contact }
 #-------------- Footer routes ----------------------------------------------------
 
+    
 #-------------- Registration ----------------------------------------------------------
 aquitem_bico_loginoucadastro:
     path:     /loginoucadastro
@@ -26,7 +27,6 @@ aquitem_bico_registercompany:
     defaults: { _controller: UserBundle:Registration:registercompany }
 aquitem_bico_registerperson:
     path:     /cadastrocandidato 
-    #defaults: { _controller: FOSUserBundle:Registration:register }
     defaults: { _controller: UserBundle:Registration:registerperson }
     
     
@@ -49,9 +49,6 @@ aquitem_bico_candidateVacancies:
 aquitem_bico_candidateContracting:
     path:     /meupainelcdhistocontrat
     defaults: { _controller: MyAppAquitemBicoBundle:CandidateDashboard:contractingHistory }
-aquitem_bico_candidateAccountSettings:
-    path:     /meupainelcdconfigconta
-    defaults: { _controller: MyAppAquitemBicoBundle:CandidateDashboard:accountSettings }
     
 #-------------- Company -----------------------------------------------------------
 aquitem_bico_employerDashboard:

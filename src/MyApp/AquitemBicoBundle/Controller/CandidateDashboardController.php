@@ -14,7 +14,6 @@ class CandidateDashboardController extends Controller {
         return $this->render('MyAppAquitemBicoBundle:Candidates:candidateDashboard.html.twig', array(
             'vagas' => $vagas,
         ));
-        //return $this->render('MyAppAquitemBicoBundle:Candidates:candidateDashboard.html.twig');
     }
     public function editprofilAction() {
         return $this->render('MyAppAquitemBicoBundle:Candidates:candidateEditProfil.html.twig');
@@ -31,9 +30,7 @@ class CandidateDashboardController extends Controller {
     public function evaluationsAction() {
         return $this->render('MyAppAquitemBicoBundle:Candidates:candidateEvaluations.html.twig');
     }
-    public function accountSettingsAction() {
-        return $this->render('MyAppAquitemBicoBundle:Candidates:candidateAccountSettings.html.twig');
-    }
+  
 
 
 }

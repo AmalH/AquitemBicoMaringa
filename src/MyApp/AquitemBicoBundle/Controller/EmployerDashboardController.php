@@ -27,7 +27,12 @@ class EmployerDashboardController extends Controller {
     }
 
     public function vacanciesAction() {
-        return $this->render('MyAppAquitemBicoBundle:Employers:employerVacancies.html.twig');
+         $em = $this->getDoctrine()->getManager();
+
+        $vagas = $em->getRepository('MyAppAquitemBicoBundle:Vagas')->findAll();
+        return $this->render('MyAppAquitemBicoBundle:Employers:employerVacancies.html.twig', array(
+            'vagas' => $vagas,
+        ));
     }
 
     public function evaluateCandidateAction() {

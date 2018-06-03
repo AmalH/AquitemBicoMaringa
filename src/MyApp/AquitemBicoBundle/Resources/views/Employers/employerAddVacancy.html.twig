@@ -20,13 +20,13 @@
 
     {%block maincontent %}
         <main id="maincontent">
-            <div class="row"  style="padding: 0px;margin-top:-40px">
+            <div class="row">
                 {% block menu %} 
                     {{parent() }}
                 {% endblock %}
                 {% block selectedcontent %}        
                     <div class="col-md-10" style="padding:0px;">
-                        <div style="height: 100%;width: 100%;">
+                        <div>
                             <div class="row contenttop">
                                 <div class="col-md-12">
                                     <div class="page-heading">

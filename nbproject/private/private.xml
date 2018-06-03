@@ -2,6 +2,38 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/wamp/www/AquitemBico/web/assets/css/style.css</file>
+            <file>file:/C:/wamp/www/AquitemBico/src/MyApp/AquitemBicoBundle/Resources/views/Employers/employerEditVacancy.html.twig</file>
+            <file>file:/C:/wamp/www/AquitemBico/src/MyApp/AquitemBicoBundle/Resources/views/Candidates/candidateEditProfil.html.twig</file>
+            <file>file:/C:/wamp/www/AquitemBico/src/MyApp/AquitemBicoBundle/Resources/views/Employers/employerAccountSettings.html.twig</file>
+            <file>file:/C:/wamp/www/AquitemBico/src/MyApp/AquitemBicoBundle/Resources/views/Employers/employerAddVacancy.html.twig</file>
+            <file>file:/C:/wamp/www/AquitemBico/web/assets/css/responsive.css</file>
+            <file>file:/C:/wamp/www/AquitemBico/src/MyApp/AquitemBicoBundle/Resources/views/Employers/employerEvaluation.html.twig</file>
+            <file>file:/C:/wamp/www/AquitemBico/src/MyApp/AquitemBicoBundle/Resources/views/Employers/employerProfil.html.twig</file>
+            <file>file:/C:/wamp/www/AquitemBico/src/MyApp/AquitemBicoBundle/Resources/views/Employers/employerEditProfil.html.twig</file>
+            <file>file:/C:/wamp/www/AquitemBico/src/MyApp/AquitemBicoBundle/Controller/CandidateDashboardController.php</file>
+            <file>file:/C:/wamp/www/AquitemBico/web/assets/plugins/carousel_album/css/carousel.css</file>
+            <file>file:/C:/wamp/www/AquitemBico/src/MyApp/AquitemBicoBundle/Controller/AquitemBicoController.php</file>
+            <file>file:/C:/wamp/www/AquitemBico/src/MyApp/AquitemBicoBundle/Resources/views/Candidates/candidateVacancies.html.twig</file>
+            <file>file:/C:/wamp/www/AquitemBico/src/MyApp/AquitemBicoBundle/Resources/views/Candidates/candidateMyProfil.html.twig</file>
+            <file>file:/C:/wamp/www/AquitemBico/src/MyApp/AquitemBicoBundle/Controller/EmployerDashboardController.php</file>
+            <file>file:/C:/wamp/www/AquitemBico/src/MyApp/AquitemBicoBundle/Resources/views/Employers/employerFavs.html.twig</file>
+            <file>file:/C:/wamp/www/AquitemBico/src/MyApp/AquitemBicoBundle/Resources/views/Candidates/candidateDashboard.html.twig</file>
+            <file>file:/C:/wamp/www/AquitemBico/src/MyApp/AquitemBicoBundle/Resources/views/Employers/employerVacancies.html.twig</file>
+            <file>file:/C:/wamp/www/AquitemBico/src/MyApp/AquitemBicoBundle/Resources/views/Home/about.html.twig</file>
+            <file>file:/C:/wamp/www/AquitemBico/src/MyApp/AquitemBicoBundle/Resources/views/Employers/employerReceivedEvals.html.twig</file>
+            <file>file:/C:/wamp/www/AquitemBico/app/config/parameters.yml</file>
+            <file>file:/C:/wamp/www/AquitemBico/src/MyApp/AquitemBicoBundle/Resources/views/Home/gallery.html.twig</file>
+            <file>file:/C:/wamp/www/AquitemBico/src/MyApp/AquitemBicoBundle/Resources/views/Home/home.html.twig</file>
+            <file>file:/C:/wamp/www/AquitemBico/src/MyApp/AquitemBicoBundle/Resources/views/Home/contact.html.twig</file>
+            <file>file:/C:/wamp/www/AquitemBico/src/MyApp/AquitemBicoBundle/Resources/config/routing.yml</file>
+            <file>file:/C:/wamp/www/AquitemBico/src/MyApp/AquitemBicoBundle/Resources/views/Registration/loginoucadastro.html.twig</file>
+            <file>file:/C:/wamp/www/AquitemBico/src/MyApp/AquitemBicoBundle/Resources/views/layout.html.twig</file>
+            <file>file:/C:/wamp/www/AquitemBico/src/MyApp/AquitemBicoBundle/Resources/views/Employers/employerDashboard.html.twig</file>
+            <file>file:/C:/wamp/www/AquitemBico/src/MyApp/AquitemBicoBundle/Resources/views/Candidates/candidateContractingHistory.html.twig</file>
+            <file>file:/C:/wamp/www/AquitemBico/src/MyApp/AquitemBicoBundle/Resources/views/Candidates/candidateEvaluations.html.twig</file>
+            <file>file:/C:/wamp/www/AquitemBico/src/MyApp/AquitemBicoBundle/Resources/views/Registration/registercompany.html.twig</file>
+        </group>
     </open-files>
 </project-private>
