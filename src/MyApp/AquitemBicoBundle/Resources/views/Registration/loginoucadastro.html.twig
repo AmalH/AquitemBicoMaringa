@@ -1,0 +1,111 @@
+{% extends "MyAppAquitemBicoBundle::layout.html.twig" %}
+{% block head %}
+    <title> {% block title %} {{parent() }}{% endblock %} </title>
+    {% block stylesheet %} 
+        {{parent() }}
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+    {% endblock %}
+{% endblock %}
+
+{% block content %}
+    <!-- banner -->
+    <div class="page_banner login_banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="banner-heading ">Login / Cadastro</div>    
+                </div>  
+            </div>
+        </div>
+    </div>  
+    <!--content-->
+    <main id="maincontent">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="page-tab">
+                        <div id="form">
+                            <div id="userform">
+                                <!-- tabs -->
+                                <ul class="nav nav-tabs nav-justified" role="tablist">
+                                    <li class="active border-right"><a href="#login"  role="tab" data-toggle="tab">Log in</a></li>
+                                    <li><a href="#signup" role="tab" data-toggle="tab">Cadastre-se</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <!-- login tab -->
+                                    <div class="tab-pane fade active in" id="login">
+                                        <div class="row">
+                                            <div class="social_button col-md-12 col-sm-12 text-center">
+                                                <a href="#" class="facebook btn-block"><i class="fa fa-facebook-square"></i> Login com o seu Faceboook</a>
+                                            </div> 
+                                        </div>
+                                        <form id="loginform">
+                                            <div class="form-group">
+                                                <label> Nome ou E-mail</label>
+                                                <input type="email" class="form-control" id="email" required data-validation-required-message="Por favor, insira seu email." autocomplete="off">
+                                                <div class="search_icon"><span class="ti-user"></span></div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label> Senha</label>
+                                                <input type="password" class="form-control" id="password" required data-validation-required-message="Por favor, insira seu senha" autocomplete="off">
+                                                <div class="search_icon"><span class="ti-pin"></span></div>
+                                            </div>
+                                            <fieldset id="who_is_login" style="text-align:center">
+                                                <label class="radio-inline"><input type="radio" value="LoginFazar" name="usariologin" onchange="document.getElementById('loginform').action = '{{ path('aquitem_bico_candidateDashboard') }}';">Eu sou um candidato a emprego</label>
+                                                <label class="radio-inline"><input type="radio" value="LoginContratar" name="usariologin" onchange="document.getElementById('loginform').action = '{{ path('aquitem_bico_employerDashboard') }}';">Eu sou uma empresa</label>
+                                            </fieldset>
+                                            
+                                            <div class="mrgn-30-top">
+                                                <button type="submit" class="btn btn-larger btn-block"/>Log in</button>
+                                            </div>
+                                            <div class="col-md-12" style="padding-top: 15px;">
+                                                <a href="#" style="color: #333333;font-weight: bold">Esqueci minha senha</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- sign up tab -->
+                                    <div class="tab-pane fade" id="signup">
+                                        <div class="row">
+                                            <div class="social_button col-md-12 col-sm-12 text-center">
+                                                <a href="#" class="facebook btn-block"><i class="fa fa-facebook-square"></i> Cadastrar com o seu Faceboook</a>
+                                            </div> 
+                                        </div>
+                                        <form id="signupform" >
+                                            <div class="form-group">
+                                                <label>Nome</label>
+                                                <input type="text" class="form-control" id="first_name" required data-validation-required-message="Por favor, insira seu nome." autocomplete="off">
+                                                <div class="search_icon"><span class="ti-user"></span></div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label> Email </label>
+                                                <input type="email" class="form-control" id="email" required data-validation-required-message="Por favor, insira seu email." autocomplete="off">
+                                                <div class="search_icon"><span class="ti-email"></span></div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Senha </label>
+                                                <input type="password" class="form-control" id="password" required data-validation-required-message="Por favor, insira seu senha" autocomplete="off">
+                                                <div class="search_icon"><span class="ti-pin"></span></div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label> Confirmar senha </label>
+                                                <input type="password" class="form-control" id="password" required data-validation-required-message="Por favor, insira seu senha" autocomplete="off">
+                                                <div class="search_icon"><span class="ti-pin"></span></div>
+                                            </div>
+                                            <fieldset id="who_is_signup" style="text-align:center">
+                                                <label class="radio-inline"><input  type="radio" value="QueroFazar" name="usarioregistrar" onchange="document.getElementById('signupform').action = '{{ path('aquitem_bico_registerperson') }}';">Quero fazer um Bico</label>
+                                                <label class="radio-inline"><input type="radio" value="QueroContratar" name="usarioregistrar" onchange="document.getElementById('signupform').action = '{{ path('aquitem_bico_registercompany') }}';">Quero contratar um Bico</label>
+                                            </fieldset>
+                                            <div class="mrgn-30-top">
+                                                <button type="submit" class="btn btn-larger btn-block"/>Cadastre-se</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </main>
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Vagas list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nomevaga</th>
+                <th>Local</th>
+                <th>Estado</th>
+                <th>Cidade</th>
+                <th>Numerovagas</th>
+                <th>Horario1</th>
+                <th>Horario2</th>
+                <th>Horario3</th>
+                <th>Horario4</th>
+                <th>Data</th>
+                <th>Remuneracao</th>
+                <th>Observacao</th>
+                <th>Idempresa</th>
+                <th>Datacadastro</th>
+                <th>Telefone</th>
+                <th>Id</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for vaga in vagas %}
+            <tr>
+                <td><a href="{{ path('vagas_show', { 'id': vaga.id }) }}">{{ vaga.nomeVaga }}</a></td>
+                <td>{{ vaga.local }}</td>
+                <td>{{ vaga.estado }}</td>
+                <td>{{ vaga.cidade }}</td>
+                <td>{{ vaga.numeroVagas }}</td>
+                <td>{{ vaga.horario1 }}</td>
+                <td>{{ vaga.horario2 }}</td>
+                <td>{{ vaga.horario3 }}</td>
+                <td>{{ vaga.horario4 }}</td>
+                <td>{% if vaga.data %}{{ vaga.data|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ vaga.remuneracao }}</td>
+                <td>{{ vaga.observacao }}</td>
+                <td>{{ vaga.idEmpresa }}</td>
+                <td>{% if vaga.dataCadastro %}{{ vaga.dataCadastro|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ vaga.telefone }}</td>
+                <td>{{ vaga.id }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('vagas_show', { 'id': vaga.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('vagas_edit', { 'id': vaga.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('vagas_new') }}">Create a new vaga</a>
+        </li>
+    </ul>
+{% endblock %}

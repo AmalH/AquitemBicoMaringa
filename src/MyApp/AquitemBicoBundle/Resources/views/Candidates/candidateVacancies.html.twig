@@ -1,0 +1,402 @@
+{% extends 'MyAppAquitemBicoBundle::Candidates/candidateDashboard.html.twig' %}
+
+{% block head %}
+    {% block stylesheet %} 
+        {{parent() }}
+    {% endblock %}
+{% endblock %}
+{% block content %}
+    {% block banner %}
+        <div class="page_banner banner about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="banner-heading">Vagas disponível para você</div>    
+                    </div>  
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+
+    {%block maincontent %}
+        <main id="maincontent">
+            <div class="row"  style="padding: 0px;margin-top:-40px;">
+                {% block menu %} 
+                    {{parent() }}
+                {% endblock %}
+                {% block selectedcontent %}
+                    <div class="col-md-10" style="padding:0px">
+                        <div class="row contenttop">
+                            <div class="col-md-6">
+                                <div class="page-heading">
+                                    <h2>Adapta-se às suas preferências</h2>
+                                </div>
+                            </div>
+                            <div class="col-md-6" style="padding-top:40px;padding-left:85px">
+                                <div style="display: inline-block"><p>Ordenar por:</p></div>
+                                <div style="display: inline-block">
+                                    <div class="dropdown">
+                                        <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Vagas recentes
+                                            <span class="caret"></span></button>
+                                        <ul class="dropdown-menu pull-right">
+                                            <li><a href="#">Web Developer</a></li>
+                                            <li><a href="#">MySQL Developers</a></li>
+                                            <li><a href="#">Web Designer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row contentmain">
+                            <div class="col-md-9">
+                                <div class="clearfix"></div>
+                                <div class="page_listing">
+                                    <div class="sorting_content">
+                                        <div class="tab-image"><img src="{{ asset('assets/images/home/img1.jpg')}}" alt="" class="img-responsive"></div>
+                                        <div class="overflow">
+                                            <div class="text-shorting">
+                                                <a class="vacancy" href="{{ path('aquitem_bico_avacancy') }}"><h1 class="col-md-6 col-sm-7">Agente de limpeza<p>Acrelândia, AC</p> </h1></a>
+                                                <div class="work-time text-center col-md-2">Tempo integral</div>
+                                            </div>
+                                            <div class="bottom_text">
+                                                <div class="contact_details col-md-4 col-sm-4"> 
+                                                    <span><strong>Remuneração: <i class="fa fa-money"></i></strong> $7,50,000 / P.A</span>
+                                                    <span><strong>Data de início: <i class="fa fa-calendar-o"></i></strong> 10 Setembro</span>
+                                                </div>
+                                                <div class="contact_details col-md-8 col-sm-8">
+                                                    <span><strong>Proficiência em:</strong> Auxiliar de limpeza / Diarista, Cozinheiro, Jardineiro</span>
+                                                </div>
+                                                <p class="col-md-12">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis ultricies nec pellentesque eu.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sorting_content">
+                                        <div class="tab-image"><img src="{{ asset('assets/images/home/img2.jpg')}}" alt="" class="img-responsive"></div>
+                                        <div class="overflow">
+                                            <div class="text-shorting">
+                                                <h1 class="col-md-6 col-sm-7">Urgent Opening for PHP Developer<p>Agricultural Sceences</p> </h1>
+                                                <div class="work-time part text-center col-md-2">Tempo partial</div>
+                                            </div>
+                                            <div class="bottom_text">
+                                                <div class="contact_details col-md-4 col-sm-4"> 
+                                                    <span><strong>Remuneração: <i class="fa fa-money"></i></strong> $7,50,000 / P.A</span>
+                                                    <span><strong>Data de início: <i class="fa fa-calendar-o"></i></strong> 10 Setembro</span>
+                                                </div>
+                                                <div class="contact_details col-md-8 col-sm-8">
+                                                    <span><strong>Skills:</strong> Desinger, Developer, Html, Javascript, Jquery, CSS</span>
+                                                </div>
+                                                <p class="col-md-12">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis ultricies nec pellentesque eu.</p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="sorting_content">
+                                        <div class="tab-image"><img src="{{ asset('assets/images/home/img3.jpg')}}" alt="" class="img-responsive"></div>
+                                        <div class="overflow">
+                                            <div class="text-shorting">
+                                                <h1 class="col-md-6 col-sm-7">Urgent Require- Web Developer<p>Agricultural Sceences</p> </h1>
+                                                <div class="work-time part text-center col-md-2">Tempo partial</div>
+                                            </div>
+                                            <div class="bottom_text">
+                                                <div class="contact_details col-md-4 col-sm-4"> 
+                                                    <span><strong>Remuneração: <i class="fa fa-money"></i></strong> $7,50,000 / P.A</span>
+                                                    <span><strong>Data de início: <i class="fa fa-calendar-o"></i></strong> 10 Setembro</span>
+                                                </div>
+                                                <div class="contact_details col-md-8 col-sm-8">
+                                                    <span><strong>Skills:</strong> Desinger, Developer, Html, Javascript, Jquery, CSS</span>
+                                                </div>
+                                                <p class="col-md-12">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis ultricies nec pellentesque eu.</p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="sorting_content">
+                                        <div class="tab-image"><img src="{{ asset('assets/images/home/img4.jpg')}}" alt="" class="img-responsive"></div>
+                                        <div class="overflow">
+                                            <div class="text-shorting">
+                                                <h1 class="col-md-6 col-sm-7">Nodejs,Angularjs Developer<p>Agricultural Sceences</p> </h1>
+                                                <div class="work-time text-center col-md-2">Full Time</div>
+                                            </div>
+                                            <div class="bottom_text">
+                                                <div class="contact_details col-md-4 col-sm-4">
+                                                    <span><strong>Sallery: <i class="fa fa-money"></i></strong> $7,50,000 / P.A</span>
+                                                </div>
+                                                <div class="contact_details col-md-8 col-sm-8">
+                                                    <span><strong>Skills:</strong> Desinger, Developer, Html, Javascript, Jquery, CSS</span>
+                                                </div>
+                                                <p class="col-md-12">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis ultricies nec pellentesque eu.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sorting_content">
+                                        <div class="tab-image"><img src="{{ asset('assets/images/home/img5.jpg')}}" alt="" class="img-responsive"></div>
+                                        <div class="overflow">
+                                            <div class="text-shorting">
+                                                <h1 class="col-md-6 col-sm-7">Software Developer -IT Co<p>Agricultural Sceences</p> </h1>
+                                                <div class="work-time Free text-center col-md-2">Encerrada</div>
+                                            </div>
+                                            <div class="bottom_text">
+                                                <div class="contact_details col-md-4 col-sm-4">
+                                                    <span><strong>Sallery: <i class="fa fa-money"></i></strong> $7,50,000 / P.A</span>
+                                                </div>
+                                                <div class="contact_details col-md-8 col-sm-8">
+                                                    <span><strong>Skills:</strong> Desinger, Developer, Html, Javascript, Jquery, CSS</span>
+                                                </div>
+                                                <p class="col-md-12">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis ultricies nec pellentesque eu.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sorting_content">
+                                        <div class="tab-image"><img src="{{ asset('assets/images/home/img6.jpg')}}" alt="" class="img-responsive"></div>
+                                        <div class="overflow">
+                                            <div class="text-shorting">
+                                                <h1 class="col-md-6 col-sm-7">Website Developer and Head of Developers<p>Agricultural Sceences</p> </h1>
+                                                <div class="work-time text-center col-md-2">Full Time</div>
+                                            </div>
+                                            <div class="bottom_text">
+                                                <div class="contact_details col-md-4 col-sm-4">
+                                                    <span><strong>Sallery: <i class="fa fa-money"></i></strong> $7,50,000 / P.A</span>
+                                                </div>
+                                                <div class="contact_details col-md-8 col-sm-8">
+                                                    <span><strong>Skills:</strong> Desinger, Developer, Html, Javascript, Jquery, CSS</span>
+                                                </div>
+                                                <p class="col-md-12">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis ultricies nec pellentesque eu.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sorting_content">
+                                        <div class="tab-image"><img src="{{ asset('assets/images/home/img7.jpg')}}" alt="" class="img-responsive"></div>
+                                        <div class="overflow">
+                                            <div class="text-shorting">
+                                                <h1 class="col-md-6 col-sm-7">Software Developer-Winforms-wpf<p>Agricultural Sceences</p> </h1>
+                                                <div class="work-time text-center col-md-2">Full Time</div>
+                                            </div>
+                                            <div class="bottom_text">
+                                                <div class="contact_details col-md-4 col-sm-4">
+                                                    <span><strong>Sallery: <i class="fa fa-money"></i></strong> $7,50,000 / P.A</span>
+                                                </div>
+                                                <div class="contact_details col-md-8 col-sm-8">
+                                                    <span><strong>Skills:</strong> Desinger, Developer, Html, Javascript, Jquery, CSS</span>
+                                                </div>
+                                                <p class="col-md-12">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis ultricies nec pellentesque eu.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <ul class="pagination pull-right">
+                                    <li class="active"><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">...</a></li>
+                                    <li><a href="#">20</a></li>
+                                    <li class="active"><a href="#"><i class="fa fa-angle-right"></i></a></li>    
+                                </ul> 
+                            </div>
+                            <div class="col-md-3">
+
+                                <div class="job-search" style="padding: 0px">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Título / palavras-chave">
+                                        <div class="search_icon"><span class="ti-briefcase"></span></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Cidade / CEP">
+                                        <div class="search_icon"><span class="ti-location-pin"></span></div>
+                                    </div>
+                                    <a href="#" class="btn btn-default">Resultados da Busca</a>
+                                </div>
+                                <div class="job_title" style="margin-top:15px">Categorias</div>
+                                <div class="borderfull-width"></div>
+                                <div class="clearfix"></div>
+                                <div class="page-heading">
+                                    <div class="category">
+                                        <div class="col-md-1 p-l p-r">
+                                            <input type="checkbox" id="Accounting" name="ossm"> 
+                                        </div>
+                                        <div class="col-md-11 p-l p-r">
+                                            <label for="Accounting">Atendente</label> 
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="col-md-1 p-l p-r">
+                                            <input type="checkbox" id="Interior" name="ossm" checked=""> 
+                                        </div>
+                                        <div class="col-md-11 p-l p-r">
+                                            <label for="Interior">Auxiliar de servicos gerais</label> 
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="col-md-1 p-l p-r">
+                                            <input type="checkbox" id="Bank" name="ossm"> 
+                                        </div>
+                                        <div class="col-md-11 p-l p-r">
+                                            <label for="Bank">Carregador</label> 
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="col-md-1 p-l p-r">
+                                            <input type="checkbox" id="Content" name="ossm"> 
+                                        </div>
+                                        <div class="col-md-11 p-l p-r">
+                                            <label for="Content">Garçon</label> 
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="col-md-1 p-l p-r">
+                                            <input type="checkbox" id="Consultant" name="ossm" checked=""> 
+                                        </div>
+                                        <div class="col-md-11 p-l p-r">
+                                            <label for="Consultant">Bartender</label> 
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="col-md-1 p-l p-r">
+                                            <input type="checkbox" id="jobs" name="ossm" checked=""> 
+                                        </div>
+                                        <div class="col-md-11 p-l p-r">
+                                            <label for="jobs">Segurança</label> 
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="col-md-1 p-l p-r">
+                                            <input type="checkbox" id="export" name="ossm"> 
+                                        </div>
+                                        <div class="col-md-11 p-l p-r">
+                                            <label for="export">Motorista</label> 
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="col-md-1 p-l p-r">
+                                            <input type="checkbox" id="Merchandiser" name="ossm"> 
+                                        </div>
+                                        <div class="col-md-11 p-l p-r">
+                                            <label for="Merchandiser">Pedreiro </label> 
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="col-md-1 p-l p-r">
+                                            <input type="checkbox" id="Security" name="ossm"> 
+                                        </div>
+                                        <div class="col-md-11 p-l p-r">
+                                            <label for="Security">Venda </label> 
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="col-md-1 p-l p-r">
+                                            <input type="checkbox" id="hr" name="ossm"> 
+                                        </div>
+                                        <div class="col-md-11 p-l p-r">
+                                            <label for="hr">Auxiliar de cozinha </label> 
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="col-md-1 p-l p-r">
+                                            <input type="checkbox" id="hotel" name="ossm"> 
+                                        </div>
+                                        <div class="col-md-11 p-l p-r">
+                                            <label for="hotel">Baba </label> 
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="col-md-1 p-l p-r">
+                                            <input type="checkbox" id="hotel" name="ossm"> 
+                                        </div>
+                                        <div class="col-md-11 p-l p-r">
+                                            <label for="hotel">Cozinheiro</label> 
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="col-md-1 p-l p-r">
+                                            <input type="checkbox" id="hotel" name="ossm"> 
+                                        </div>
+                                        <div class="col-md-11 p-l p-r">
+                                            <label for="hotel">Panfletagem </label> 
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="col-md-1 p-l p-r">
+                                            <input type="checkbox" id="hotel" name="ossm"> 
+                                        </div>
+                                        <div class="col-md-11 p-l p-r">
+                                            <label for="hotel">Copa </label> 
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="col-md-1 p-l p-r">
+                                            <input type="checkbox" id="hotel" name="ossm"> 
+                                        </div>
+                                        <div class="col-md-11 p-l p-r">
+                                            <label for="hotel">Garçonete </label> 
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="col-md-1 p-l p-r">
+                                            <input type="checkbox" id="hotel" name="ossm"> 
+                                        </div>
+                                        <div class="col-md-11 p-l p-r">
+                                            <label for="hotel">Paisagismo </label> 
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="col-md-1 p-l p-r">
+                                            <input type="checkbox" id="hotel" name="ossm"> 
+                                        </div>
+                                        <div class="col-md-11 p-l p-r">
+                                            <label for="hotel">Recepçao </label> 
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="col-md-1 p-l p-r">
+                                            <input type="checkbox" id="hotel" name="ossm"> 
+                                        </div>
+                                        <div class="col-md-11 p-l p-r">
+                                            <label for="hotel">Auxiliar de limpeza/Diarista </label> 
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="col-md-1 p-l p-r">
+                                            <input type="checkbox" id="hotel" name="ossm"> 
+                                        </div>
+                                        <div class="col-md-11 p-l p-r">
+                                            <label for="hotel">Jardineiro </label> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="job_title">Tipo de vaga</div>
+                                <div class="borderfull-width"></div>
+                                <div class="page-heading">
+                                    <div class="category">
+                                        <div class="col-md-1 p-l p-r">
+                                            <input type="checkbox" id="cb_9" name="ossm"> 
+                                        </div>
+                                        <div class="col-md-11 p-l p-r">
+                                            <label for="cb_9">Todos os tipos</label> 
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="col-md-1 p-l p-r">
+                                            <input type="checkbox" id="cb_8" name="ossm" checked=""> 
+                                        </div>
+                                        <div class="col-md-11 p-l p-r">
+                                            <label for="cb_8">Tempo total</label> 
+                                        </div>
+                                    </div>
+                                    <div class="category">
+                                        <div class="col-md-1 p-l p-r">
+                                            <input type="checkbox" id="cb_7" name="ossm"> 
+                                        </div>
+                                        <div class="col-md-11 p-l p-r">
+                                            <label for="cb_7">Tempo parcial</label> 
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>                        
+                        </div>
+                    </div> {%endblock %}
+            </div>
+            </main>
+        {%endblock %}
+
+    {% endblock %}

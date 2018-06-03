@@ -1,0 +1,159 @@
+{% extends 'MyAppAquitemBicoBundle::Employers/employerDashboard.html.twig' %}
+
+{% block head %}
+    <title> {% block title %} {{parent() }}{% endblock %} </title>
+    {% block stylesheet %} 
+        {{parent() }}
+        <link rel="stylesheet" href="{{ asset('assets/plugins/wysihtml5/wysihtml5.css') }}" type="text/css">
+    {% endblock %}
+{% endblock %}
+
+{% block content %}
+
+    {% block banner %}
+        <div id="vagasbanner" class="page_banner banner price-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="banner-heading">Aplicações por "Agente de limpeza"</div>    
+                    </div>  
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+
+    {%block maincontent %}
+        <!-- content -->
+        <main id="maincontent">
+            <div class="row"  style="padding: 0px;margin-top:-40px;">
+                {%block menu %}
+                    <div class="col-md-2" style="height: 60%;">
+                        <div class="Resume manage" style="margin-left:10px;height:100%">
+                            <a class="dshbdMainCandidate" href="{{ path('aquitem_bico_candidateDashboard') }}"><h1>Minha conta</h1></a>
+                            <ul class="unstyled">
+                                <li><a  href="{{ path('aquitem_bico_candidateVacancies') }}"><i class="fa fa-caret-right"></i> Painel de vagas</a></li>
+                                <li><a  href="{{ path('aquitem_bico_candidateContracting') }}"><i class="fa fa-caret-right"></i> História de contratação</a></li>
+                                <li><a href="{{ path('aquitem_bico_candidateProfil') }}"><i  class="fa fa-caret-right"></i> Meu currículo</a></li>
+                                <li><a  href="{{ path('aquitem_bico_candidateEvaluations') }}"><i class="fa fa-caret-right"></i>Avaliações recebidas</a></li>
+                                <li><a href="{{ path('aquitem_bico_candidateEditProfil') }}"><i class="fa fa-caret-right"></i> Editar currículo</a></li>
+                                <li class="border-none"><a  href="{{ path('aquitem_bico_homepage') }}"><i class="fa fa-caret-right"></i> Sair</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                {%endblock %}
+                {% block selectedcontent %}
+                    <div class="col-md-10" style="padding:0px;">
+                        <div class="row contenttop">
+                            <div class="col-md-12">
+                                <div class="page-heading">
+                                    <h2>Pode aceitar ou excluir uma dessas aplicações</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row contentmain">
+                            <div class="col-md-12">
+                                <div class="panel-body">
+                                <table class="table">
+                                    <thead class="">
+                                        <tr>
+                                            <th>Nome do candidato</th>
+                                            <th>Titulo do trabalho</th>
+                                            <th>Currículo</th>
+                                            <th>Açao</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><div class="col-md-4 col-sm-4 p-l p-r"><img src="{{ asset('assets/images/candidates/candidate-1.png') }}" alt="" class="img-responsive" width="70" height="70"></div>
+                                                <div class="overflow col-md-8 col-sm-8 p-l">
+                                                    <div class="text-shorting">
+                                                        <h1>Rachael Smith</h1>
+                                                        <p>24 anos | 1.7m</p>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="bottom-text"><a href="#"><i class="fa fa-eye"></i> Clique para ver a mensagem</a></div>
+                                            </td>    
+                                            <td style="vertical-align: text-top;"><h1>Agente de limpeza</h1></td>
+                                            <td style="vertical-align: text-top;"><a href="#"><i class="fa fa-file-pdf-o"></i> John Resume</a></td>
+                                            <td style="vertical-align: text-top;"><span><i class="fa fa-check"></i></span> <span><i class="fa fa-trash"></i></span></td>
+                                        </tr> 
+                                        <tr>
+                                            <td><div class="col-md-4 col-sm-4 p-l p-r"><img src="{{ asset('assets/images/candidates/candidate-2.png') }}" alt="" class="img-responsive" width="70" height="70"></div>
+                                                <div class="overflow col-md-8 col-sm-8 p-l">
+                                                    <div class="text-shorting">
+                                                        <h1>Homer Simpson</h1>
+                                                        <p>UI/UX Developer</p>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="bottom-text"><a href="#"><i class="fa fa-eye"></i> Clique para ver a mensagem</a></div>
+                                            </td>    
+                                            <td style="vertical-align: text-top;"><h1>Team of PHP MySQL <br />Developers</h1></td>
+                                            <td style="vertical-align: text-top;"><a href="#"><i class="fa fa-file-pdf-o"></i> John Resume</a></td>
+                                            <td style="vertical-align: text-top;"><span><i class="fa fa-check"></i></span> <span><i class="fa fa-trash"></i></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="col-md-4 col-sm-4 p-l p-r"><img src="{{ asset('assets/images/candidates/candidate-3.png') }}" alt="" class="img-responsive" width="70" height="70"></div>
+                                                <div class="overflow col-md-8 col-sm-8 p-l">
+                                                    <div class="text-shorting">
+                                                        <h1>John Spectre</h1>
+                                                        <p>UI/UX Developer</p>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="bottom-text"><a href="#"><i class="fa fa-eye"></i> Clique para ver a mensagem</a></div>
+                                            </td>    
+                                            <td style="vertical-align: text-top;"><h1>Team of PHP MySQL <br />Developers</h1></td>
+                                            <td style="vertical-align: text-top;"><a href="#"><i class="fa fa-file-pdf-o"></i> John Resume</a></td>
+                                            <td style="vertical-align: text-top;"><span><i class="fa fa-check"></i></span> <span><i class="fa fa-trash"></i></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div class="col-md-4 col-sm-4 p-l p-r"><img src="{{ asset('assets/images/candidates/candidate-4.png') }}" alt="" class="img-responsive" width="70" height="70"></div>
+                                                <div class="overflow col-md-8 col-sm-8 p-l">
+                                                    <div class="text-shorting">
+                                                        <h1>Suzy Biggs</h1>
+                                                        <p>UI/UX Developer</p>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="bottom-text"><a href="#"><i class="fa fa-eye"></i> Clique para ver a mensagem</a></div>
+                                            </td>    
+                                            <td style="vertical-align: text-top;"><h1>Team of PHP MySQL <br />Developers</h1></td>
+                                            <td style="vertical-align: text-top;"><a href="#"><i class="fa fa-file-pdf-o"></i> John Resume</a></td>
+                                            <td style="vertical-align: text-top;"><span><i class="fa fa-check"></i></span> <span><i class="fa fa-trash"></i></span></td>
+                                        </tr>
+                                        <tr class="border-none">
+                                            <td><div class="col-md-4 col-sm-4 p-l p-r"><img src="{{ asset('assets/images/candidates/candidate-5.png') }}" alt="" class="img-responsive" width="70" height="70"></div>
+                                                <div class="overflow col-md-8 col-sm-8 p-l">
+                                                     <div class="text-shorting">
+                                                        <h1>Angela Haze</h1>
+                                                        <p>UI/UX Developer</p>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="bottom-text"><a href="#"><i class="fa fa-eye"></i> Clique para ver a mensagem</a></div>
+                                            </td>    
+                                            <td style="vertical-align: text-top;"><h1>Team of PHP MySQL <br />Developers</h1></td>
+                                            <td style="vertical-align: text-top;"><a href="#"><i class="fa fa-file-pdf-o"></i> John Resume</a></td>
+                                            <td style="vertical-align: text-top;"><span><i class="fa fa-check"></i></span> <span><i class="fa fa-trash"></i></span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            </div>                        
+                        </div>
+                    </div>
+                {%endblock %}
+
+            </div>
+        </div>
+    </main>
+{% endblock %}
+
+{% endblock %}
+{% block js %}
+    {{parent() }}
+    <script src="{{ asset('assets/plugins/wysihtml5/wysihtml5-0.3.0.js') }}" ></script>
+    <script src="{{ asset('assets/js/wysihtml.js') }}" ></script>
+{% endblock %}

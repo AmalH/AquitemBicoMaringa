@@ -1,0 +1,9 @@
+user:
+    resource: "@UserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+my_app_aquitem_bico:
+    resource: "@MyAppAquitemBicoBundle/Resources/config/routing.yml"
+    prefix:   /
+    
+

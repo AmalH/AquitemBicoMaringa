@@ -1,0 +1,88 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Vaga</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Nomevaga</th>
+                <td>{{ vaga.nomeVaga }}</td>
+            </tr>
+            <tr>
+                <th>Local</th>
+                <td>{{ vaga.local }}</td>
+            </tr>
+            <tr>
+                <th>Estado</th>
+                <td>{{ vaga.estado }}</td>
+            </tr>
+            <tr>
+                <th>Cidade</th>
+                <td>{{ vaga.cidade }}</td>
+            </tr>
+            <tr>
+                <th>Numerovagas</th>
+                <td>{{ vaga.numeroVagas }}</td>
+            </tr>
+            <tr>
+                <th>Horario1</th>
+                <td>{{ vaga.horario1 }}</td>
+            </tr>
+            <tr>
+                <th>Horario2</th>
+                <td>{{ vaga.horario2 }}</td>
+            </tr>
+            <tr>
+                <th>Horario3</th>
+                <td>{{ vaga.horario3 }}</td>
+            </tr>
+            <tr>
+                <th>Horario4</th>
+                <td>{{ vaga.horario4 }}</td>
+            </tr>
+            <tr>
+                <th>Data</th>
+                <td>{% if vaga.data %}{{ vaga.data|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Remuneracao</th>
+                <td>{{ vaga.remuneracao }}</td>
+            </tr>
+            <tr>
+                <th>Observacao</th>
+                <td>{{ vaga.observacao }}</td>
+            </tr>
+            <tr>
+                <th>Idempresa</th>
+                <td>{{ vaga.idEmpresa }}</td>
+            </tr>
+            <tr>
+                <th>Datacadastro</th>
+                <td>{% if vaga.dataCadastro %}{{ vaga.dataCadastro|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Telefone</th>
+                <td>{{ vaga.telefone }}</td>
+            </tr>
+            <tr>
+                <th>Id</th>
+                <td>{{ vaga.id }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('vagas_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('vagas_edit', { 'id': vaga.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

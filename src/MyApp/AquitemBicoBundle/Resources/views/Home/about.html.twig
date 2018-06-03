@@ -1,0 +1,148 @@
+{% extends "MyAppAquitemBicoBundle::layout.html.twig" %}
+{% block head %}
+    <title> {% block title %} {{parent() }}{% endblock %} </title>
+    {% block stylesheet %} 
+        {{parent() }}
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+    {% endblock %}
+{% endblock %}
+
+{% block content %}
+    <div class="page_banner about_banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="banner-heading">Quem somos ?</div>    
+                </div>  
+            </div>
+        </div>
+    </div>
+    <main id="maincontent">
+        <div class="container">
+            <div class="about_us">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="page-heading">
+                            <span>Introdução</span>
+                            <h2>Quem somos</h2>
+                            <hr>
+                            <!--<strong>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</strong>-->
+                        </div>
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="about_right">
+                            <span>Concebido com base no aumento da demanda pela mão de obra temporária: garçons, babás, atendentes, auxiliar de cozinha, auxiliar de limpeza/diarista, auxiliar de serviços gerais entre outras – também conhecida como freelance ou bico –, 
+                                <b class="text-success">o AquiTemBico.com </b> é uma ferramenta prática e rápida,com um sistema dinâmico de cadastro, tanto para contratantes quanto para candidatos. </span>
+                            <!--<span>Aenean leo <b class="text-success">ligula, porttitor eu, consequat</b> vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus <b class="text-success">viverra nulla ut metus varius</b> laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</span>!-->
+                            <p>Com o diferencial de uma sede física, o AquiTemBico.com oferece maior segurança para ambas as partes na contratação e formação de equipes, além de praticidade por possibilitar que o processo se realize online e com comunicação direta entre a empresa/contratante e os candidatos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mrgn-30-top">
+                    <div class="col-md-6">
+                        <div class="video-sec">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe id="player_1" src="https://www.youtube.com/embed/EreZNkWzBAw" allowtransparency="true" frameborder="0" scrolling="no" width="100%" height="350"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="page-heading">
+                            <h2>Trabalhamos com mão de obra temporária para as seguintes funções:</h2>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <ul class="list-unstyled">
+                                        <li><b><i class="fa fa-angle-right"></i></b> Atendente</li>
+                                        <li><b><i class="fa fa-angle-right"></i></b> Auxiliar de Cozinha</li>
+                                        <li><b><i class="fa fa-angle-right"></i></b> Auxiliar de Limpeza/Diarista</li>
+                                        <li><b><i class="fa fa-angle-right"></i></b> Auxiliar de Serviços Gerais</li>                                 
+                                    </ul>  
+                                </div>
+                                <div class="col-md-4"> 
+                                    <ul class="list-unstyled">
+                                        <li><b><i class="fa fa-angle-right"></i></b></span> Bartender</li>
+                                        <li><b><i class="fa fa-angle-right"></i></b> Carregador</li>
+                                        <li><b><i class="fa fa-angle-right"></i></b> Copa</li>
+                                        <li><b><i class="fa fa-angle-right"></i></b> Cozinheiro(a)</li>
+                                        <li><b><i class="fa fa-angle-right"></i></b> Garçom/Garçonete</li>
+                                        <li><b><i class="fa fa-angle-right"></i></b> Babá</li>
+                                    </ul> </div>
+                                <div class="col-md-4">
+                                    <ul class="list-unstyled">
+                                        <li><b><i class="fa fa-angle-right"></i></b> Jardineiro(a)</li>
+                                        <li><b><i class="fa fa-angle-right"></i></b> Motorista</li>
+                                        <li><b><i class="fa fa-angle-right"></i></b> Panfletagem</li>
+                                        <li><b><i class="fa fa-angle-right"></i></b> Recepção</li>
+                                        <li><b><i class="fa fa-angle-right"></i></b> Segurança</li>
+                                        <li><b><i class="fa fa-angle-right"></i></b> Vendas</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="featured">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <div class="page-heading">
+                            <h2>Nós o ajudamos</h2>
+                            <p>A Aquí Tem Bico presta serviços de assessorias para empresas e eventos, e conta com um  site moderno que facilita o recrutamento de trabalhos adaptados às suas necessidades.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="icon-feature"><span class="ti-user"></span></div>
+                        <div class="overflow feature_block">
+                            <h2>Equipa dedicada</h2>
+                            <p>Temos um site que se preocupa com as suas necessidades e facilita a sua pesquisa.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="icon-feature"><span class="ti-search"></span></div>
+                        <div class="overflow feature_block">
+                            <h2>Busca fácil de vagas</h2>
+                            <p>Trabalhar e contratar um BICO nunca foi tão fácil</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="icon-feature"><span class="ti-file"></span></div>
+                        <div class="overflow feature_block">
+                            <h2>Perfis de recrutamento</h2>
+                            <p>Nós revisamos os perfis para garantir que cada bico se adapte às suas necesidades.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="icon-feature"><span class="ti-comment-alt"></span></div>
+                        <div class="overflow feature_block">
+                            <h2>Conversa em tempo real com empresas</h2>
+                            <p>Tire suas duvidas diretamente via chat na vaga que se cadastrar.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="icon-feature"><span class="ti-world"></span></div>
+                        <div class="overflow feature_block">
+                            <h2>Base de dados extensa</h2>
+                            <p>Constantemente atualizando o site para melhorar a sua experiencia.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="icon-feature"><span class="ti-mobile"></span></div>
+                        <div class="overflow feature_block">
+                            <h2>Sistema responsivo</h2>
+                            <p>Formato expansivo para celulares e Tablets.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}
